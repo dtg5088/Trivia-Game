@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+   
+    <div class="container">
+        <!-- Displays the time the user has left-->
+        <div class="row">
+            <h2>Time Left: <span id="timeLeft">10</span> </h2>
+            <button id="start">Start</button>
+        </div>
+        <!-- Displays the questions-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="questionZone">
+                        <h3>Question:</h3>
+                        <span id="question"></span> <br>
+                    </div>
+                </div>
+        <!-- Displays the answer choices the user can pick-->
+                <div class="row">
+                    <div class="answerZone">
+                        <h4>Pick the correct answer before time runs out!</h4>
+                        <span id="answer1" class="dClick" value="0"></span> <br>
+                        <span id="answer2" class="dClick" value="1"></span> <br>
+                        <span id="answer3" class="dClick" value="2"></span> <br>
+                        <span id="answer4" class="dClick" value="3"></span> <br>
+                    </div>
+                </div>
+            </div>
+        <!-- Displays the image the user can use for the guess-->
+            <div class="col-md-6">
+                <div class="row">
+                    <div id="imageZone"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
